@@ -949,24 +949,6 @@ class _IFileDescriptorReservation(Interface):
         """
 
 
-    def __enter__():
-        """
-        Release the underlying file descriptor so that code within the
-        context manager can open a new file.
-        """
-
-
-    def __exit__(excType, excValue, traceback):
-        """
-        Attempt to re-open the reserved file descriptor.  See
-        L{reserve} for caveats.
-
-        @param excType: See L{object.__exit__}
-        @param excValue: See L{object.__exit__}
-        @param traceback: See L{object.__exit__}
-        """
-
-
 
 @implementer(_IFileDescriptorReservation)
 @attr.s
