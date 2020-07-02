@@ -9,7 +9,8 @@ Tests for L{twisted.words.protocols.jabber.jstrports}.
 from twisted.trial import unittest
 
 from twisted.words.protocols.jabber import jstrports
-from twisted.application.internet import TCPClient
+from twisted.application.internet import TCPClient  # type: ignore[attr-defined]  # noqa
+
 
 
 class JabberStrPortsPlaceHolderTests(unittest.TestCase):

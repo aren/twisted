@@ -8,7 +8,7 @@ Tests for L{twisted._threads._team}.
 
 from twisted.trial.unittest import SynchronousTestCase
 
-from twisted.python.context import call, get
+from twisted.python.context import call, get  # type: ignore[attr-defined]
 from twisted.python.components import proxyForInterface
 
 from twisted.python.failure import Failure
