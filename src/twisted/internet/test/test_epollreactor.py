@@ -8,9 +8,9 @@ Tests for L{twisted.internet.epollreactor}.
 
 from twisted.trial.unittest import TestCase
 try:
-    from twisted.internet.epollreactor import _ContinuousPolling
+    from twisted.internet.posixbase import _ContinuousPolling
 except ImportError:
-    _ContinuousPolling = None
+    _ContinuousPolling = None  # type: ignore[assignment,misc]
 from twisted.internet.task import Clock
 from twisted.internet.error import ConnectionDone
 
